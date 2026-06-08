@@ -1,0 +1,14 @@
+{
+  "name": "BHPauzes",
+  "short_name": "BHPauzes",
+  "description": "Slim pauzebeheer voor evenementen",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#ff7a00",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff7a00">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BHPauzes">
+  <meta name="description" content="Slim pauzebeheer voor evenementen">
+  <title>BHPauzes</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">BarHoofd Pauzes</p>
+        <h1>BHPauzes</h1>
+        <p class="subtitle">Slim pauzebeheer voor evenementen</p>
+      </div>
+      <button id="installBtn" class="ghost hidden" type="button">Installeer</button>
+    </header>
+
+    <main>
+      <section id="dashboard" class="tab-panel active" aria-labelledby="tab-dashboard"></section>
+      <section id="breaks" class="tab-panel" aria-labelledby="tab-breaks"></section>
+      <section id="employees" class="tab-panel" aria-labelledby="tab-employees"></section>
+      <section id="shifts" class="tab-panel" aria-labelledby="tab-shifts"></section>
+      <section id="settings" class="tab-panel" aria-labelledby="tab-settings"></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Hoofdnavigatie">
+      <button id="tab-dashboard" class="nav-item active" data-tab="dashboard" type="button"><span>📊</span>Dashboard</button>
+      <button id="tab-breaks" class="nav-item" data-tab="breaks" type="button"><span>⏱</span>Pauzes</button>
+      <button id="tab-employees" class="nav-item" data-tab="employees" type="button"><span>👥</span>Medewerkers</button>
+      <button id="tab-shifts" class="nav-item" data-tab="shifts" type="button"><span>🕒</span>Shifts</button>
+      <button id="tab-settings" class="nav-item" data-tab="settings" type="button"><span>⚙️</span>Instellingen</button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="importFile" class="visually-hidden" type="file" accept="application/json,.json">
+  <script src="app.js" defer></script>
+</body>
+</html>
