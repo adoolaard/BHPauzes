@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bhpauzes-v1';
+const CACHE_NAME = 'bhpauzes-v2';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './manifest.json', './icons/icon.svg', './icons/apple-touch-icon.svg'];
 
 self.addEventListener('install', (event) => {
